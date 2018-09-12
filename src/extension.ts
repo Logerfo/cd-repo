@@ -1,4 +1,3 @@
-'use strict';
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
@@ -6,22 +5,34 @@ import * as vscode from 'vscode';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+    context.subscriptions.push(vscode.commands.registerCommand('extension.cd', cd));
+}
 
-    // Use the console to output diagnostic information (console.log) and errors (console.error)
-    // This line of code will only be executed once when your extension is activated
-    console.log('Congratulations, your extension "cd-repo" is now active!');
+var lastActiveTerminal: vscode.Terminal;
+async function cd(args) {
+    //https://github.com/Microsoft/vscode-extension-samples/blob/master/terminal-sample/src/extension.ts
+    //(<any>vscode.window).onDidChangeActiveTerminal(e => lastActiveTerminal = e);
+    const configuration: string = vscode.workspace.getConfiguration("cd", args._fsPath).get('terminal', "LastActive");
+    let terminal: vscode.Terminal;
+    switch (configuration) {
+        case "AlwaysCreate":
+            terminal = vscode.window.createTerminal();
+            break;
 
-    // The command has been defined in the package.json file
-    // Now provide the implementation of the command with  registerCommand
-    // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.sayHello', () => {
-        // The code you place here will be executed every time your command is executed
+        case "First":
+            terminal = vscode.window.terminals.length > 0 ? vscode.window.terminals[0] : vscode.window.createTerminal();
+            break;
 
-        // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
-    });
+        case "Last":
+            terminal = vscode.window.terminals.length > 0 ? vscode.window.terminals[vscode.window.terminals.length - 1] : vscode.window.createTerminal();
+            break;
 
-    context.subscriptions.push(disposable);
+        case "LastActive":
+            terminal = lastActiveTerminal ? lastActiveTerminal : vscode.window.createTerminal();
+            break;
+    }
+    terminal.show();
+    terminal.sendText("cd ");
 }
 
 // this method is called when your extension is deactivated

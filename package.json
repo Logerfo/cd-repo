@@ -5,29 +5,70 @@
     "version": "0.0.1",
     "publisher": "logerfo",
     "engines": {
-        "vscode": "^1.27.0"
+        "vscode": "^1.26.0"
+    },
+    "bugs": {
+        "url": "https://github.com/Logerfo/cd-repo/issues",
+        "email": "bruno@logerfo.tk"
+    },
+    "author": {
+        "email": "bruno@logerfo.tk",
+        "name": "Bruno Logerfo",
+        "url": "https://github.com/Logerfo"
+    },
+    "license": "Unlicense",
+    "homepage": "https://github.com/Logerfo/cd-repo/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Logerfo/cd-repo.git"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": [
+            {
+                "type": "object",
+                "title": "CD Repo",
+                "properties": {
+                    "cd-repo.terminal": {
+                        "scope": "resource",
+                        "type": "string",
+                        "enum": [
+                            "AlwaysCreate",
+                            "First",
+                            "Last",
+                            "LastActive"
+                        ],
+                        "default": "LastActive",
+                        "description": "Choose which terminal will be used to execute the cd command."
+                    }
+                }
+            }
+        ],
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.cd",
+                "title": "CD Repo"
             }
-        ]
+        ],
+        "menus": {
+            "scm/sourceControl": [
+                {
+                    "command": "extension.cd"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
         "typescript": "^2.6.1",
