@@ -30,7 +30,7 @@ async function cd(args) {
         default: vscode.window.showErrorMessage(`${configuration} is not a valid terminal option.`);
     }
     terminal.show();
-    terminal.sendText("cd \"" + (<any>args).rootUri.fsPath + "\"");
+    terminal.sendText(`cd "${(<any>args).rootUri.fsPath}"`);
 }
 
 export function deactivate() {
