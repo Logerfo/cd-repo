@@ -41,10 +41,9 @@
                         "enum": [
                             "AlwaysCreate",
                             "First",
-                            "Last",
-                            "LastActive"
+                            "Last"
                         ],
-                        "default": "LastActive",
+                        "default": "AlwaysCreate",
                         "description": "Choose which terminal will be used to execute the cd command."
                     }
                 }
