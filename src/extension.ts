@@ -8,9 +8,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 //var lastActiveTerminal: vscode.Terminal;
 async function cd(args) {
-    const configuration: string = vscode.workspace.getConfiguration("cd-repo", args._fsPath).get('terminal', "AlwaysCreate");
+    const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
+    const terminalType: string = config.get('terminal', "AlwaysCreate");
+    const command = config.get('command', 'cd');
     let terminal: vscode.Terminal;
-    switch (configuration) {
+    switch (terminalType) {
         case "AlwaysCreate":
             terminal = vscode.window.createTerminal();
             break;
@@ -27,10 +29,10 @@ async function cd(args) {
         //    terminal = lastActiveTerminal ? lastActiveTerminal : vscode.window.createTerminal();
         //    break;
 
-        default: vscode.window.showErrorMessage(`${configuration} is not a valid terminal option.`);
+        default: vscode.window.showErrorMessage(`${terminalType} is not a valid terminal option.`);
     }
     terminal.show();
-    terminal.sendText(`cd "${(<any>args).rootUri.fsPath}"`);
+    terminal.sendText(`${command} "${(<any>args).rootUri.fsPath}"`);
 }
 
 export function deactivate() {

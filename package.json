@@ -45,6 +45,16 @@
                         ],
                         "default": "AlwaysCreate",
                         "description": "Choose which terminal will be used to execute the cd command."
+                    },
+                    "cd-repo.command": {
+                        "scope": "resource",
+                        "type": "string",
+                        "enum": [
+                            "cd",
+                            "pushd"
+                        ],
+                        "default": "cd",
+                        "description": "Choose which command will be used to change the directory."
                     }
                 }
             }
