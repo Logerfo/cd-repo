@@ -61,14 +61,14 @@
         ],
         "commands": [
             {
-                "command": "extension.cd",
+                "command": "cd-repo.cd",
                 "title": "CD Repo"
             }
         ],
         "menus": {
             "scm/sourceControl": [
                 {
-                    "command": "extension.cd"
+                    "command": "cd-repo.cd"
                 }
             ]
         }

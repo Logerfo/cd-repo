@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
     //proposed API
     //(<any>vscode.window).onDidChangeActiveTerminal(e => lastActiveTerminal = e);
-    context.subscriptions.push(vscode.commands.registerCommand('extension.cd', cd));
+    context.subscriptions.push(vscode.commands.registerCommand('cd-repo.cd', cd));
 }
 
 //var lastActiveTerminal: vscode.Terminal;
