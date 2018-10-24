@@ -10,6 +10,7 @@ Updated readme
 New configuration: `cd-repo.command` (`cd` or `pushd`).
 
 # 0.0.4
+Command name changed from `extension.cd` to `cd-repo.cd`.  
 New commands: "Pull Repo" (`cd-repo.pull`) and "Push Repo" (`cd-repo.push`).  
 New configurations: `cd-repo.pullArgs` and `cd-repo.pushArgs`.
 
