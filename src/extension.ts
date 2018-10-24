@@ -39,6 +39,7 @@ async function cd(args) {
 }
 
 async function pull(args) {
+    await cd(args);
     const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
     let terminal: vscode.Terminal = getTerminal(config);
     const pullArgs = config.get('pullArgs', '');
@@ -48,6 +49,7 @@ async function pull(args) {
 }
 
 async function push(args) {
+    await cd(args);
     const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
     let terminal: vscode.Terminal = getTerminal(config);
     const pushArgs = config.get('pushArgs', '');
