@@ -19,8 +19,4 @@ Uses the last terminal tab. If none, it creates a new one.
 
 Feel free to open any issues or pull requests. I will try to make time for them, if any.
 
-# Release Notes
-
-See [here](CHANGELOG.md).
-
------------------------------------------------------------------------------------------------------------
+# [Release Notes](CHANGELOG.md)
