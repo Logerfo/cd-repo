@@ -1,14 +1,11 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    //proposed API
-    //(<any>vscode.window).onDidChangeActiveTerminal(e => lastActiveTerminal = e);
     context.subscriptions.push(vscode.commands.registerCommand('cd-repo.cd', cd));
     context.subscriptions.push(vscode.commands.registerCommand('cd-repo.pull', pull));
     context.subscriptions.push(vscode.commands.registerCommand('cd-repo.push', push));
 }
 
-//var lastActiveTerminal: vscode.Terminal;
 function getTerminal(config) {
     const terminalType: string = config.get('terminal', "AlwaysCreate");
     switch (terminalType) {
@@ -18,7 +15,7 @@ function getTerminal(config) {
 
         case "Last": return vscode.window.terminals.length > 0 ? vscode.window.terminals[vscode.window.terminals.length - 1] : vscode.window.createTerminal();
 
-        //case "LastActive": return lastActiveTerminal ? lastActiveTerminal : vscode.window.createTerminal();
+        //case "Active": return vscode.window.activeTerminal ? vscode.window.activeTerminal : vscode.window.createTerminal();
 
         default: vscode.window.showErrorMessage(`${terminalType} is not a valid terminal option.`);
     }
