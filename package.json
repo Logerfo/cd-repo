@@ -88,13 +88,16 @@
         "menus": {
             "scm/sourceControl": [
                 {
-                    "command": "cd-repo.cd"
+                    "command": "cd-repo.cd",
+                    "group": "cd-repo"
                 },
                 {
-                    "command": "cd-repo.pull"
+                    "command": "cd-repo.pull",
+                    "group": "cd-repo"
                 },
                 {
-                    "command": "cd-repo.push"
+                    "command": "cd-repo.push",
+                    "group": "cd-repo"
                 }
             ]
         }
