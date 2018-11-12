@@ -16,3 +16,6 @@ New configurations: `cd-repo.pullArgs` and `cd-repo.pushArgs`.
 
 # 0.0.5
 `cd` or `pushd` command being called before `pull` and `push` commands.
+
+# 0.0.6
+Fixed Source Control Manager commands not being grouped.
