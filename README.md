@@ -1,3 +1,8 @@
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
+[![Rating](https://vsmarketplacebadge.apphb.com/rating-short/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
+[![Build Status](https://travis-ci.org/Logerfo/cd-repo.svg?branch=master)](https://travis-ci.org/Logerfo/cd-repo)
+
 # CD Repo
 
 Right click in a repository in the Source Control Manager tab and click in "CD Repo" to change your terminal directory to its location.
