@@ -2,6 +2,7 @@
 [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
 [![Build Status](https://travis-ci.org/Logerfo/cd-repo.svg?branch=master)](https://travis-ci.org/Logerfo/cd-repo)
+[![Known Vulnerabilities](https://snyk.io/test/github/logerfo/cd-repo/badge.svg)](https://snyk.io/test/github/logerfo/cd-repo)
 
 # CD Repo
 
