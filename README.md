@@ -26,3 +26,9 @@ Uses the last terminal tab. If none, it creates a new one.
 Feel free to open any issues or pull requests. I will try to make time for them, if any.
 
 # [Release Notes](CHANGELOG.md)
+
+# Donate
+
+<img src="btc.png" width="200">
+
+BTC: 1LoGErFoNzE1gCA5fzk6A82nV6iJdKssSZ
