@@ -3,6 +3,7 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/logerfo.cd-repo.svg)](https://marketplace.visualstudio.com/items?itemName=logerfo.cd-repo)
 [![Build Status](https://travis-ci.org/Logerfo/cd-repo.svg?branch=master)](https://travis-ci.org/Logerfo/cd-repo)
 [![Known Vulnerabilities](https://snyk.io/test/github/logerfo/cd-repo/badge.svg)](https://snyk.io/test/github/logerfo/cd-repo)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_shield)
 
 # CD Repo
 
@@ -32,3 +33,7 @@ Feel free to open any issues or pull requests. I will try to make time for them,
 <img src="https://i.imgur.com/ndlBtuX.png" width="200">
 
 BTC: 1LoGErFoNzE1gCA5fzk6A82nV6iJdKssSZ
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_large)
