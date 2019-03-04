@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/Logerfo/cd-repo.svg?branch=master)](https://travis-ci.org/Logerfo/cd-repo)
 [![Known Vulnerabilities](https://snyk.io/test/github/logerfo/cd-repo/badge.svg)](https://snyk.io/test/github/logerfo/cd-repo)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_shield)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Logerfo/cd-repo.svg)](https://greenkeeper.io/)
 
 # CD Repo
 
@@ -36,4 +37,4 @@ BTC: 1LoGErFoNzE1gCA5fzk6A82nV6iJdKssSZ
 
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_large) [![Greenkeeper badge](https://badges.greenkeeper.io/Logerfo/cd-repo.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_large)
