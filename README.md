@@ -5,6 +5,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/logerfo/cd-repo/badge.svg)](https://snyk.io/test/github/logerfo/cd-repo)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLogerfo%2Fcd-repo?ref=badge_shield)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Logerfo/cd-repo.svg)](https://greenkeeper.io/)
+[![Dependencies Status](https://david-dm.org/logerfo/cd-repo/dev-status.svg)](https://david-dm.org/logerfo/cd-repo?type=dev)
 
 # CD Repo
 
