@@ -19,3 +19,7 @@ New configurations: `cd-repo.pullArgs` and `cd-repo.pushArgs`.
 
 # 0.0.6
 Fixed Source Control Manager commands not being grouped.
+
+# 0.0.7
+Added an icon to the extension.  
+Performance improvements.
