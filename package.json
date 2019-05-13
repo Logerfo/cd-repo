@@ -100,6 +100,20 @@
                     "command": "cd-repo.push",
                     "group": "cd-repo"
                 }
+            ],
+            "commandPalette": [
+                {
+                    "command": "cd-repo.cd",
+                    "when": "false"
+                },
+                {
+                    "command": "cd-repo.pull",
+                    "when": "false"
+                },
+                {
+                    "command": "cd-repo.push",
+                    "when": "false"
+                }
             ]
         }
     },
