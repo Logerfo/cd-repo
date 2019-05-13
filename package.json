@@ -2,7 +2,7 @@
     "name": "cd-repo",
     "displayName": "CD Repo",
     "description": "Changes the terminal directory to the selected repository folder.",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "logerfo",
     "engines": {
         "vscode": "^1.26.0"

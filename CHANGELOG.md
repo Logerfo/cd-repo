@@ -23,3 +23,6 @@ Fixed Source Control Manager commands not being grouped.
 # 0.0.7
 Added an icon to the extension.  
 Performance improvements.
+
+# 0.0.8
+Removed the commands from the palette.
