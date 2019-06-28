@@ -1,4 +1,4 @@
-# Change Log
+# Changelog
 
 ## 0.0.8 - 2019-05-13
 Removed the commands from the palette.
