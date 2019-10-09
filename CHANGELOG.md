@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.9 - 2019-10-09
+New `Active` option to run the command in the active terminal. Fixes #1.
+
 ## 0.0.8 - 2019-05-13
 Removed the commands from the palette.
 

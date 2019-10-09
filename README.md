@@ -21,6 +21,9 @@ Uses the first terminal tab. If none, it creates a new one.
 #### `Last`
 Uses the last terminal tab. If none, it creates a new one.
 
+#### `Active`
+Uses the currently active terminal tab. If none, it creates a new one.
+
 ### `cd-repo.command` (`cd` or `pushd`)
 
 # Contributing
