@@ -15,7 +15,7 @@ function getTerminal(config) {
 
         case "Last": return vscode.window.terminals.length > 0 ? vscode.window.terminals[vscode.window.terminals.length - 1] : vscode.window.createTerminal();
 
-        //case "Active": return vscode.window.activeTerminal ? vscode.window.activeTerminal : vscode.window.createTerminal();
+        case "Active": return vscode.window.activeTerminal ? vscode.window.activeTerminal : vscode.window.createTerminal();
 
         default: vscode.window.showErrorMessage(`${terminalType} is not a valid terminal option.`);
     }

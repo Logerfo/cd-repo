@@ -42,7 +42,8 @@
                         "enum": [
                             "AlwaysCreate",
                             "First",
-                            "Last"
+                            "Last",
+                            "Active"
                         ],
                         "default": "AlwaysCreate",
                         "description": "Choose which terminal will be used to execute the commands."
@@ -128,7 +129,7 @@
         "ts-loader": "6.1.0",
         "tslint": "5.20.0",
         "typescript": "3.6.3",
-        "@types/vscode": "1.26.0",
+        "@types/vscode": "1.38.0",
         "webpack": "4.39.3",
         "webpack-cli": "3.3.8"
     }
