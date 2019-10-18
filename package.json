@@ -21,7 +21,7 @@
     "homepage": "https://github.com/Logerfo/cd-repo/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Logerfo/cd-repo.git"
+        "url": "git+https://github.com/Logerfo/cd-repo.git"
     },
     "categories": [
         "Other"
