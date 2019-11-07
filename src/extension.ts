@@ -6,7 +6,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(vscode.commands.registerCommand('cd-repo.push', push));
 }
 
-function getTerminal(config) {
+function getTerminal(config: vscode.WorkspaceConfiguration) {
     const terminalType: string = config.get('terminal', "AlwaysCreate");
     switch (terminalType) {
         case "AlwaysCreate": return vscode.window.createTerminal();
@@ -26,7 +26,7 @@ function send(terminal: vscode.Terminal, text: string) {
     terminal.sendText(text);
 }
 
-async function cd(args) {
+async function cd(args: { _fsPath: vscode.Uri; }) {
     const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
     const command = config.get('command', 'cd');
     let terminal: vscode.Terminal = getTerminal(config);
@@ -35,7 +35,7 @@ async function cd(args) {
     }
 }
 
-async function pull(args) {
+async function pull(args: { _fsPath: vscode.Uri; }) {
     await cd(args);
     const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
     let terminal: vscode.Terminal = getTerminal(config);
@@ -45,7 +45,7 @@ async function pull(args) {
     }
 }
 
-async function push(args) {
+async function push(args: { _fsPath: vscode.Uri; }) {
     await cd(args);
     const config = vscode.workspace.getConfiguration("cd-repo", args._fsPath);
     let terminal: vscode.Terminal = getTerminal(config);
