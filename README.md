@@ -10,6 +10,9 @@
 
 Right click in a repository in the Source Control Manager tab and click in "CD Repo" to change your terminal directory to its location.
 
+This extensions is deprecated, since Visual Studio Code now supports this feature natively (see [changelog](https://code.visualstudio.com/updates/v1_46#_open-in-terminal)).
+![](https://code.visualstudio.com/assets/updates/1_46/scm-open-in-terminal.png)
+
 ## Configurations
 ### `cd-repo.terminal`
 #### `AlwaysCreate`
